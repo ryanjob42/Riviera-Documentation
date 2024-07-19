@@ -21,13 +21,13 @@ You can use this page to report problems with documents or ask us to add new inf
 If you're not sure where to start, here are some good suggestions!
 
 - [Getting Started](./Getting%20Started/README.md): If you're new to Linux, or just new to Riviera, check this out!
+- [Python](./Python/README.md): How to use Python on Riviera.
 - More pages are coming soon!
 
 ## Plans for the Future
 Here is the information we're planning to provide in the future.
 If there's one that you particularly want, check for it on the "Issues" page and let us know you're interested!
 
-- Getting Started
 - Contributing
   - The branch/edit/PR workflow
   - Standards and practices
@@ -35,12 +35,8 @@ If there's one that you particularly want, check for it on the "Issues" page and
   - Descriptions of the partitions
   - Slurm/sbatch tutorials
   - Interactive jobs
-- Python
-  - Install and use miniconda
-  - Numpy and Pandas
-  - Pytorch
-  - Dask
-  - Snakemake
+- R programming
+- Matlab programming
 - Using IDEs
   - Correctly using VSCode, Jupyter, PyCharm, RSudio, Matlab (GUI), etc.
 - Containers (Docker, Singularity)

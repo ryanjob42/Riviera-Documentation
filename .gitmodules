@@ -1,0 +1,3 @@
+[submodule "Python/Using Snakemake"]
+	path = Python/Using Snakemake
+	url = git@github.com:ryanjob42/snakemake-scratchpad.git
