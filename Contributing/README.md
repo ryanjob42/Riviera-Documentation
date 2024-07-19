@@ -8,8 +8,6 @@ There are two main ways you can contribute to the documents:
   - [Edit an Existing File in GitHub](#edit-an-existing-file-in-github)
 - [Use VSCode](#use-vscode)
 
-You can also 
-
 ## Use GitHub Directly
 1. Go to the main page for this repo.
    - https://github.com/ryanjob42/Riviera-Documentation
