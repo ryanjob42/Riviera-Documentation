@@ -24,30 +24,32 @@ Topics to add:
  To make sure things are running properly please type "passwd" and press enter. This message which we call a command is what will allow you to change the complex randomly generated password into one of your choosing.
  One limitation of the terminal is that you can only interact through messages making things like file transfer a complex task but luckily there are very simple work arounds mentioned later in the documentation.
  If you are interesting in using an IDE (like VSCode or PyCharm) to connect to Riviera, **DON'T**. These programs in the background cause massive problems that can prevent/lag the entire system for every user. 
+
 ## File Downloading and Uploading
+
 ## Linux Basic Commands
 ### Moving Around
-- cd: Change Directory. This command is used to navigate between directories. For example, cd Documents will move you to the Documents directory.
-- ls: List. This command lists all files and directories in the current directory.
-- pushd: Push Directory. This command is used to save the current directory so you can return to it later. For example, pushd Documents will save the current directory and move you to the Documents directory.
-- popd: Pop Directory. This command returns you to the directory saved by the pushd command.
-- pwd: Print Working Directory. This command displays the current directory you’re in.
+- `cd`: Change Directory. This command is used to navigate between directories. For example, `cd Documents` will move you to the Documents directory.
+- `ls`: List. This command lists all files and directories in the current directory.
+- `pushd`: Push Directory. This command is used to save the current directory so you can return to it later. For example, `pushd Documents` will save the current directory and move you to the Documents directory.
+- `popd`: Pop Directory. This command returns you to the directory saved by the pushd command.
+- `pwd`: Print Working Directory. This command displays the current directory you’re in.
 ### Editing Files
-- nano: Nano is a simple and intuitive text editor for beginners. It’s easy to use and has a help menu at the bottom of the screen. To save a file in nano, you can use Ctrl+O and then hit Enter to confirm. To exit nano, you can use Ctrl+X.
-- vim: Vim is a powerful and efficient text editor, but it can be a bit difficult for beginners. It has two modes: command mode and insert mode. When you first open a file with vim, you’re in command mode. To switch to insert mode and start editing the file, press i. To save changes and stay in vim, press Esc to switch back to command mode, then type :w and hit Enter. To save changes and exit vim, type :wq in command mode and hit Enter. If you want to exit without saving changes, type :q! and hit Enter.
-- emacs: Emacs is a highly customizable text editor with a steep learning curve. It uses combinations of Ctrl and Alt (labeled as C and M respectively in emacs documentation) with other keys for commands. To start editing a file, just start typing. To save a file in emacs, you can use Ctrl+X Ctrl+S. To exit emacs, you can use
-- cat: This command is used to display the contents of a file. It’s useful for quickly viewing small files.
-- less: This command is used to view the contents of a file one page at a time. It’s useful for viewing large files.
-- head: This command is used to display the first part of files.
-- tail: This command is used to display the last part of files.
+- `nano`: Nano is a simple and intuitive text editor for beginners. It’s easy to use and has a help menu at the bottom of the screen. To save a file in nano, you can use Ctrl+O and then hit Enter to confirm. To exit nano, you can use Ctrl+X.
+- `vim`: Vim is a powerful and efficient text editor, but it can be a bit difficult for beginners. It has two modes: command mode and insert mode. When you first open a file with vim, you’re in command mode. To switch to insert mode and start editing the file, press i. To save changes and stay in vim, press Esc to switch back to command mode, then type :w and hit Enter. To save changes and exit vim, type :wq in command mode and hit Enter. If you want to exit without saving changes, type :q! and hit Enter.
+- `emacs`: Emacs is a highly customizable text editor with a steep learning curve. It uses combinations of Ctrl and Alt (labeled as C and M respectively in emacs documentation) with other keys for commands. To start editing a file, just start typing. To save a file in emacs, you can use Ctrl+X Ctrl+S. To exit emacs, you can use Ctrl+X Ctrl+C.
+- `cat`: This command is used to display the contents of a file. It’s useful for quickly viewing small files.
+- `less`: This command is used to view the contents of a file one page at a time. It’s useful for viewing large files.
+- `head`: This command is used to display the first part of files.
+- `tail`: This command is used to display the last part of files.
 ### Moving Files Locally
-- cp: Copy. This command is used to copy files or directories. For example, cp file1 file2 will create a copy of file1 and name it file2.
-- mv: Move. This command is used to move or rename files or directories. For example, mv file1 file2 will rename file1 to file2.
-- rm: Remove. This command is used to delete files. For example, rm file1 will delete file1.
-- mkdir: Make Directory. This command is used to create a new directory. For example, mkdir new_directory will create a new directory named new_directory.
-- rmdir: Remove Directory. This command is used to delete a directory. For example, rmdir directory will delete the directory named directory.
-- touch: This command is used to create a new empty file.
-- ln: This command is used to create a link between files.
+- `cp`: Copy. This command is used to copy files or directories. For example, `cp file1 file2` will create a copy of file1 and name it file2.
+- `mv`: Move. This command is used to move or rename files or directories. For example, `mv file1 file2` will rename file1 to file2.
+- `rm`: Remove. This command is used to delete files. For example, `rm file1` will delete file1.
+- `mkdir`: Make Directory. This command is used to create a new directory. For example, `mkdir new_directory` will create a new directory named new_directory.
+- `rmdir`: Remove Directory. This command is used to delete a directory. For example, `rmdir directory` will delete the directory named directory.
+- `touch`: This command is used to create a new empty file.
+- `ln`: This command is used to create a link between files.
 
 ## SLURM
 ## The module system
