@@ -16,8 +16,9 @@ Topics to add:
   - Don't: use GUI programs
   - Don't: use IDEs (VSCode, PyCharm, etc.) incorrectly
     - Once pages are made for using them correctly, link them in here.
-- How to Connect
-  - Using the VPN off campus
+## How to Connect 
+  ### Off Campus
+    The first step to accessing Riviria is to make sure your computer can talk to the Riviria's login computer. If you are on campus and connected to the wifi then you're good to go! If not you need to set up and connect to the CSU VPN. Luckily, CSU IT has a very good tutorial with pictures for each step. First, click [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#install-agent) to install a program called "Global Protect". Next, setup Global Protect by following the steps [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#gp-connect-PC-mac). When you connect to Global Protect, your computer now acts as if it's using CSU's wifi even though you're remote.
   - SSH setup
   - Connecting via the terminal
   - Using MobaXTerm, Putty, etc.
