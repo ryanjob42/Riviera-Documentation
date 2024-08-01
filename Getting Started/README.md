@@ -21,8 +21,11 @@ Topics to add:
   The first step to accessing Riviera is to make sure your computer can talk to the Riviera's login computer. If you are on campus and connected to the wifi then you're good to go! If not you need to set up and connect to the CSU VPN. Luckily, CSU IT has a very good tutorial with pictures for each step. First, click [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#install-agent) to install a program called "Global Protect". Next, setup Global Protect by following the steps [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#gp-connect-PC-mac). When you connect to Global Protect, your computer now acts as if it's using CSU's wifi even though you're remote. Now you're ready to talk to the login computer by using an SSH connection mentioned bellow.
  ### Using SSH
  At this point, you're computer should now be able to talk to Riviera! Unfortuantly, this isn't as simple as logging into a CSU on campus computer. Riviera doesn't have what's called a "GUI" so all communication has to be typed messages in what we call a terminal (this process looks like hackers you see on TV). You can think of the terminal like iMessage or WhatsApp, as it will connect you with Riviera and allow for sending and recieving messages. To use the terminal for SSH connection please refer to [this tutorial](https://www.tomshardware.com/how-to/use-ssh-connect-to-remote-computer). While the tutorial mentioned references "smartipi" and "pi@raspberrypi.local" please instaed use "usesrname@riviera.colostate.edu" where username is the name provided by the person managing the riviera computer. If you forget this username, please reachout to them.
+
  To make sure things are running properly please type "passwd" and press enter. This message which we call a command is what will allow you to change the complex randomly generated password into one of your choosing.
+ 
  One limitation of the terminal is that you can only interact through messages making things like file transfer a complex task but luckily there are very simple work arounds mentioned later in the documentation.
+ 
  If you are interesting in using an IDE (like VSCode or PyCharm) to connect to Riviera, **DON'T**. These programs in the background cause massive problems that can prevent/lag the entire system for every user. 
 
 ## File Downloading and Uploading
@@ -53,6 +56,7 @@ Topics to add:
 
 ## SLURM
 As you may have noticed, users of Riviera can only connect to what we call the "login node". You can think of this as the central computer that acts as a bridge between you and the computing resources. You can directly ssh into the login node but not any other node. In order to use the other nodes, a job manager called SLURM is used. This program manages all the jobs people run and prevents competing for resources. It will automatically pick which node for you to use and if all are busy, it will put you in line and run your program as soon as it can without any input so you can walk away and grab a coffee! Using this program however can be a challenge at first. Also, please note that code should never be run on the login node, this is the node all users are connecting to so if you slow it down, the over 100 users on Riviera will also be impacted. 
+
 The first step to using SLURM is to load it, to do so simple run `module load slurm`. Now you can run `squeue` to see the current jobs running and the waitlist. You can also run `sinfo` to see the partitions (these are all the ways you can run your script ranging from short run on a GPU to week long on a high ram computer). Here is a basic SLURM script:
 ```
 #!/bin/bash
