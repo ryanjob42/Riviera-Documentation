@@ -7,6 +7,7 @@ They include definitions of common words or terms, instructions on the basics of
 - [What is Riviera?](#what-is-Riviera)
 - [Fair share usage](#fair-share-usage)
 - [How to Connect](#how-to-connect)
+
   -[Off Campus](#off-campus)
   -[Using SSH](#using-ssh)
   -[File Downloading and Uploading](#file-downloading-and-uploading)
