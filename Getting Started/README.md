@@ -54,12 +54,14 @@ Topics to add:
 ## SLURM
 As you may have noticed, users of Riviera can only connect to what we call the "login node". You can think of this as the central computer that acts as a bridge between you and the computing resources. You can directly ssh into the login node but not any other node. In order to use the other nodes, a job manager called SLURM is used. This program manages all the jobs people run and prevents competing for resources. It will automatically pick which node for you to use and if all are busy, it will put you in line and run your program as soon as it can without any input so you can walk away and grab a coffee! Using this program however can be a challenge at first. Also, please note that code should never be run on the login node, this is the node all users are connecting to so if you slow it down, the over 100 users on Riviera will also be impacted. 
 The first step to using SLURM is to load it, to do so simple run `module load slurm`. Now you can run `squeue` to see the current jobs running and the waitlist. You can also run `sinfo` to see the partitions (these are all the ways you can run your script ranging from short run on a GPU to week long on a high ram computer). Here is a basic SLURM script:
-`#!/bin/bash
+```
+#!/bin/bash
 #SBATCH --job-name=NAME
 #SBATCH --output=out
 #SBATCH --error=err
 #SBATCH --partition=PARTITION
-python main.py`
+python main.py
+```
 
 - `NAME` will let you choose what your job is called. You and all users can see this by running `squeue`. If you're running multiple jobs the name will let you easily distinguish between them
 - `PARTITION` specifies the type of computer you want to use and how long. Running `sinfo` will show you all the options but as of the time of writting these are the current options (for example if you wanted short GPU session replace #SBATCH --partition=PARTITION     with     #SBATCH --partition=short-gpu) :
