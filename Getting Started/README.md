@@ -4,14 +4,14 @@ They include definitions of common words or terms, instructions on the basics of
 
 Topics to add:
 - Common Definitions
-- What is a "high-performance compute" (HPC) cluster?
+## What is a "high-performance compute" (HPC) cluster?
   - How does it differ from a regular computer, or a bunch of regular computers?
-- What is Riviera?
-  - It's an on-campus cluster
+### What is Riviera?
+  Riviera is an collection of high end computers CSU has purchased and physcially stored on campus. These computers can range from GPU nodes which can run computationally intensive programs thousands of times faster than your laptop, high memory computers with over 20 times as much RAM as a tpyical desktop, and CPU nodes which are smiliar to the GPU nodes but easier to set up at the cost of performance. **MENTION HOW MANY OF EACH TYPE OF NODE AND MAYBE THE SPECS**. Riviera itself can't be accessed in person like a typical computer so special steps need to be taken in order to use it. Please see [How to Connect](##HowtoConnect) for more detail. Connecting to Riviera is also done through a central computer so no users can access the special computers with SSH, instead you need to use special programs like SLURM which tell the main login computer to send off your program to the computers you specified, please refer to [SLURM](##SLURM) section for more detail.
   - Costs
-- Fair share usage
-  - Storage capacity
-- Dos and Don'ts
+### Fair share usage
+  I don't actually know what this is
+### Dos and Don'ts
   - Do: debug your code before running it here
   - Don't: use GUI programs
   - Don't: use IDEs (VSCode, PyCharm, etc.) incorrectly
@@ -22,15 +22,13 @@ Topics to add:
  ### Using SSH
  At this point, you're computer should now be able to talk to Riviera! Unfortuantly, this isn't as simple as logging into a CSU on campus computer. Riviera doesn't have what's called a "GUI" so all communication has to be typed messages in what we call a terminal (this process looks like hackers you see on TV). You can think of the terminal like iMessage or WhatsApp, as it will connect you with Riviera and allow for sending and recieving messages. To use the terminal for SSH connection please refer to [this tutorial](https://www.tomshardware.com/how-to/use-ssh-connect-to-remote-computer). While the tutorial mentioned references "smartipi" and "pi@raspberrypi.local" please instaed use "usesrname@riviera.colostate.edu" where username is the name provided by the person managing the riviera computer. If you forget this username, please reachout to them.
  To make sure things are running properly please type "passwd" and press enter. This message which we call a command is what will allow you to change the complex randomly generated password into one of your choosing.
- Setting up the SSH connec
-  - Connecting via the terminal
-  - Using MobaXTerm, Putty, etc.
-  - Reiterate the point of not using an IDE (or using it correctly)
-  - Who to contact if you can't log in
-- Linux basics
+ One limitation of the terminal is that you can only interact through messages making things like file transfer a complex task but luckily there are very simple work arounds mentioned later in the documentation.
+ If you are interesting in using an IDE (like VSCode or PyCharm) to connect to Riviera, **DON'T**. These programs in the background cause massive problems that can prevent/lag the entire system for every user. 
+## Linux basics
   - Moving around: `cd`, `ls`, `pushd`, `popd`, etc.
   - Editing files: `nano`, `vim`, `emacs`
   - Moving files locally: `cp`, `mv`, `rm`, `mkdir`, `rmdir`
   - Moving files remotely: `scp`, `rsync`, `git`, FileZilla
-- The module system
+## SLURM
+## The module system
 - Link to the "Slurm" category for job submissions, etc.
