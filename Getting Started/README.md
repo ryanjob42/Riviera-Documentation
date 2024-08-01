@@ -67,15 +67,25 @@ python main.py
 - `PARTITION` specifies the type of computer you want to use and how long. Running `sinfo` will show you all the options but as of the time of writting these are the current options (for example if you wanted short GPU session replace #SBATCH --partition=PARTITION     with     #SBATCH --partition=short-gpu) :
   
 day-long-highmem    1 day
+
 short-cpu           2 hours
+
 short-gpu           2 hours
+
 short-highmem       2 hours
+
 week-long-cpu       7 days
+
 week-long-cpu       7 days
+
 week-long-gpu       7 days
+
 week-long-highmem   7 days
+
 day-long-cpu        1 day
+
 day-long-cpu        1 day
+
 day-long-gpu        1 day
 
 
