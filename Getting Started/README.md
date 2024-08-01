@@ -2,20 +2,31 @@
 These pages are to help you get started using Riviera.
 They include definitions of common words or terms, instructions on the basics of Linux and Riviera, and much more (eventually)!
 
+## Table of contents
+- [What is a high performance computeing cluster](#what-is-a-high-performance-computing-cluster)
+- [What is Riviera?](#what-is-Riviera)
+- [Fair share usage](#fair-share-usage)
+- [How to Connect](#how-to-connect)
+  -[Off Campus](#off-campus)
+  -[Using SSH](#using-ssh)
+  -[File Downloading and Uploading](#file-downloading-and-uploading)
+-[Linux Basic Commands](#linux-basic-commands)
+  -[Moving Around](#moving-around)
+  -[Editing Files](#editing-files)
+  -[Moving Files Locally](#moving-files-locally)
+-[SLURM](#slurm)
+-[The module system](#the-module-system)
+  
+
 Topics to add:
 - Common Definitions
-## What is a "high-performance compute" (HPC) cluster?
+## What is a high performance computing cluster?
   - How does it differ from a regular computer, or a bunch of regular computers?
-### What is Riviera?
+### What is Riviera
   Riviera is an collection of high end computers CSU has purchased and physcially stored on campus. These computers can range from GPU nodes which can run computationally intensive programs thousands of times faster than your laptop, high memory computers with over 20 times as much RAM as a tpyical desktop, and CPU nodes which are smiliar to the GPU nodes but easier to set up at the cost of performance. **MENTION HOW MANY OF EACH TYPE OF NODE AND MAYBE THE SPECS**. Riviera itself can't be accessed in person like a typical computer so special steps need to be taken in order to use it. Please see [How to Connect](#how-to-connect) for more detail. Connecting to Riviera is also done through a central computer so no users can access the special computers with SSH, instead you need to use special programs like SLURM which tell the main login computer to send off your program to the computers you specified, please refer to [SLURM](#slurm) section for more detail.
   - Costs
 ### Fair share usage
   I don't actually know what this is
-### Dos and Don'ts
-  - Do: debug your code before running it here
-  - Don't: use GUI programs
-  - Don't: use IDEs (VSCode, PyCharm, etc.) incorrectly
-    - Once pages are made for using them correctly, link them in here.
 ## How to Connect 
   ### Off Campus
   The first step to accessing Riviera is to make sure your computer can talk to the Riviera's login computer. If you are on campus and connected to the wifi then you're good to go! If not you need to set up and connect to the CSU VPN. Luckily, CSU IT has a very good tutorial with pictures for each step. First, click [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#install-agent) to install a program called "Global Protect". Next, setup Global Protect by following the steps [here](https://it.colostate.edu/cybersecurity/globalprotect-vpn/#gp-connect-PC-mac). When you connect to Global Protect, your computer now acts as if it's using CSU's wifi even though you're remote. Now you're ready to talk to the login computer by using an SSH connection mentioned bellow.
