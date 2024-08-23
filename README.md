@@ -1,6 +1,10 @@
 # Riviera Documentation
-This is our central document repository for the Riviera HPC cluster at Colorado State University.
+This is our central document repository for the Riviera HPC cluster in the Data Science Research Institute at Colorado State University.
 Here, you'll find helpful information about how to use Riviera, or even HPC clusters in general.
+
+Visit our website: https://www.research.colostate.edu/dsri/
+
+More about Riviera: https://www.research.colostate.edu/dsri/hpc-riviera/
 
 ## What's All Here?
 There are a few main areas in this repository: the "Code" page, "Discussions", and "Issues".
